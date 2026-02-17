@@ -329,6 +329,96 @@ const questions = [
       SAFE_DELAY: "Documentation delays emergency treatment."
     }
   }
+},
+{
+  q: "A 70-year-old client with chronic kidney disease presents with muscle weakness and peaked T waves on ECG. Serum potassium is 6.8 mEq/L. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer IV calcium gluconate as ordered", tag: "SCFHS" },
+    { text: "Prepare the patient for hemodialysis", tag: "STR" },
+    { text: "Obtain a repeat serum potassium level", tag: "NCLEX" },
+    { text: "Document ECG changes and continue monitoring", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "IV calcium stabilizes the cardiac membrane and immediately reduces the risk of lethal dysrhythmias in severe hyperkalemia.",
+    distractors: {
+      STR: "Dialysis may be required but cardiac stabilization comes first.",
+      NCLEX: "Rechecking labs delays urgent intervention.",
+      SAFE_DELAY: "Monitoring without treatment risks cardiac arrest."
+    }
+  }
+},
+{
+  q: "A patient with diabetic ketoacidosis is receiving IV insulin. Blood glucose drops from 420 mg/dL to 190 mg/dL within 2 hours. What should the nurse do NEXT?",
+  options: [
+    { text: "Add dextrose to the IV fluids", tag: "SCFHS" },
+    { text: "Stop the insulin infusion", tag: "SAFE_DELAY" },
+    { text: "Notify the physician of glucose improvement", tag: "STR" },
+    { text: "Check urine ketones", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Dextrose is added to prevent hypoglycemia while insulin continues to correct ketosis.",
+    distractors: {
+      SAFE_DELAY: "Stopping insulin allows ketoacidosis to worsen.",
+      STR: "Notification should not delay protocol-driven care.",
+      NCLEX: "Assessment does not replace metabolic management."
+    }
+  }
+},
+{
+  q: "A postoperative abdominal surgery patient reports increasing pain and abdominal rigidity. BP 92/58, HR 122. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess for signs of internal bleeding", tag: "SCFHS" },
+    { text: "Administer prescribed opioid analgesic", tag: "SAFE_DELAY" },
+    { text: "Notify the surgeon immediately", tag: "STR" },
+    { text: "Check the surgical dressing", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypotension, tachycardia, and rigidity suggest internal hemorrhage requiring rapid assessment.",
+    distractors: {
+      SAFE_DELAY: "Pain control masks worsening instability.",
+      STR: "Notification should follow focused assessment.",
+      NCLEX: "Dressings may appear normal despite internal bleeding."
+    }
+  }
+},
+{
+  q: "A hospitalized patient suddenly becomes confused and agitated. Sodium level is 118 mEq/L. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Initiate seizure precautions", tag: "SCFHS" },
+    { text: "Encourage oral fluid intake", tag: "SAFE_DELAY" },
+    { text: "Request a CT scan of the head", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe hyponatremia places the patient at high risk for seizures and cerebral edema.",
+    distractors: {
+      SAFE_DELAY: "Fluids may worsen dilutional hyponatremia.",
+      NCLEX: "Imaging delays immediate safety measures.",
+      STR: "Escalation should not delay seizure prevention."
+    }
+  }
+},
+{
+  q: "A patient receiving chemotherapy develops a temperature of 38.6°C (101.5°F). Absolute neutrophil count is 400/mm³. What should the nurse do FIRST?",
+  options: [
+    { text: "Initiate neutropenic sepsis protocol", tag: "SCFHS" },
+    { text: "Administer antipyretics", tag: "SAFE_DELAY" },
+    { text: "Obtain blood cultures", tag: "NCLEX" },
+    { text: "Notify the oncology provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Febrile neutropenia is a medical emergency requiring immediate broad-spectrum antibiotics.",
+    distractors: {
+      SAFE_DELAY: "Antipyretics mask infection without treating it.",
+      NCLEX: "Cultures are important but must not delay antibiotics.",
+      STR: "Notification occurs alongside protocol initiation."
+    }
+  }
 }
 ];
 
