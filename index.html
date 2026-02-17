@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SCFHS Prometric Pass Prediction</title>
+
+<style>
+body { font-family: Arial; background:#f4f6f8; padding:20px }
+.container { max-width:900px; margin:auto; background:#fff; padding:25px }
+.hidden { display:none }
+.option { border:1px solid #ccc; padding:12px; margin:10px 0; cursor:pointer }
+.option.selected { background:#dde6ff }
+.option.correct { border-left:6px solid green; background:#e9f8ee }
+.option.wrong { border-left:6px solid red; background:#fdeaea }
+button { padding:10px 16px; margin-top:15px }
+.rationale { background:#f9fafb; padding:15px; margin-top:15px }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- START -->
+<div id="startScreen">
+  <h2>SCFHS Prometric Pass Prediction</h2>
+  Name:<br><input id="studentName"><br><br>
+  ID:<br><input id="studentID"><br><br>
+  <button id="startBtn">Start</button>
+</div>
+
+<!-- EXAM -->
+<div id="examScreen" class="hidden">
+  <h3 id="progress"></h3>
+  <p id="questionText"></p>
+  <div id="options"></div>
+  <button id="submitBtn">Submit</button>
+  <div id="rationaleBox" class="rationale hidden"></div>
+  <button id="nextBtn" class="hidden">Next</button>
+</div>
+
+<!-- RESULT -->
+<div id="resultScreen" class="hidden">
+  <h2>Result</h2>
+  <p id="finalInfo"></p>
+  <p id="decision"></p>
+</div>
+
+</div>
+
+<script>
+/* ---------- DATA ---------- */
+const questions = [
+{
+  q: "A 68-year-old patient with pneumonia becomes restless. BP 88/54, HR 124, RR 30, SpO₂ 89%. Priority action?",
+  options: [
+    { text:"Notify physician", tag:"STR" },
+    { text:"Elevate HOB and apply oxygen", tag:"SCFHS" },
+    { text:"Obtain ABGs", tag:"NCLEX" },
+    { text:"Prepare for intubation", tag:"SAFE_DELAY" }
+  ],
+  correctTag:"SCFHS",
+  rationale:{
+    correct:"Immediate oxygenation addresses life-threatening hypoxia before escalation.",
+    distractors:{
+      STR:"Escalation without stabilization delays correction of hypoxia.",
+      NCLEX:"Diagnostics do not treat impaired gas exchange.",
+      SAFE_DELAY:"Advanced airway preparation comes after basic stabilization."
+    }
+  }
+},
+{
+  q: "A client with heart failure suddenly develops pink frothy sputum and severe dyspnea. SpO₂ 86%. FIRST action?",
+  options: [
+    { text:"Increase oxygen via non-rebreather", tag:"SCFHS" },
+    { text:"Prepare IV furosemide", tag:"NCLEX" },
+    { text:"Notify rapid response", tag:"STR" },
+    { text:"Auscultate lung sounds", tag:"SAFE_DELAY" }
+  ],
+  correctTag:"SCFHS",
+  rationale:{
+    correct:"Improving oxygenation is the priority in acute pulmonary edema.",
+    distractors:{
+      NCLEX:"Diuretics do not immediately correct hypoxia.",
+      STR:"Escalation follows initial stabilization.",
+      SAFE_DELAY:"Assessment delays urgent intervention."
+    }
+  }
+}
+];
+
+/* ---------- ENGINE ---------- */
+let current = 0;
+let selected = null;
+let score = { SCFHS:0, NCLEX:0, STR:0, SAFE_DELAY:0 };
+
+const nameInput = document.getElementById("studentName");
+const idInput   = document.getElementById("studentID");
+
+document.getElementById("startBtn").onclick = () => {
+  if (!nameInput.value || !idInput.value) {
+    alert("Enter Name and ID");
+    return;
+  }
+  document.getElementById("startScreen").classList.add("hidden");
+  document.getElementById("examScreen").classList.remove("hidden");
+  loadQuestion();
+};
+
+function loadQuestion(){
+  selected = null;
+  document.getElementById("rationaleBox").classList.add("hidden");
+  document.getElementById("nextBtn").classList.add("hidden");
+
+  const q = questions[current];
+  document.getElementById("progress").innerText = `Question ${current+1} of ${questions.length}`;
+  document.getElementById("questionText").innerText = q.q;
+
+  const optionsDiv = document.getElementById("options");
+  optionsDiv.innerHTML = "";
+
+  q.options.forEach((opt,i)=>{
+    const d = document.createElement("div");
+    d.className = "option";
+    d.innerText = opt.text;
+    d.onclick = ()=>{
+      document.querySelectorAll(".option").forEach(x=>x.classList.remove("selected"));
+      d.classList.add("selected");
+      selected = i;
+    };
+    optionsDiv.appendChild(d);
+  });
+}
+
+document.getElementById("submitBtn").onclick = () => {
+  if (selected === null) return alert("Select an option");
+
+  const q = questions[current];
+  const chosen = q.options[selected];
+  const isCorrect = chosen.tag === q.correctTag;
+
+  if (isCorrect) score.SCFHS++;
+  else score[chosen.tag]++;
+
+  const r = document.getElementById("rationaleBox");
+  r.classList.remove("hidden");
+
+  let html = isCorrect ? "<b>Correct</b><br><br>" : "<b>Incorrect</b><br><br>";
+
+  q.options.forEach(opt=>{
+    html += `<p><b>${opt.text}</b><br>${
+      opt.tag === q.correctTag
+        ? q.rationale.correct
+        : q.rationale.distractors[opt.tag]
+    }</p>`;
+  });
+
+  r.innerHTML = html;
+
+  document.querySelectorAll(".option").forEach((d,i)=>{
+    if (q.options[i].tag === q.correctTag) d.classList.add("correct");
+    else if (i === selected) d.classList.add("wrong");
+    d.onclick = null;
+  });
+
+  document.getElementById("nextBtn").classList.remove("hidden");
+};
+
+document.getElementById("nextBtn").onclick = () => {
+  current++;
+  if (current < questions.length) {
+    loadQuestion();
+  } else {
+    document.getElementById("examScreen").classList.add("hidden");
+    document.getElementById("resultScreen").classList.remove("hidden");
+
+    document.getElementById("finalInfo").innerHTML =
+      `${nameInput.value} | ${idInput.value}`;
+
+    document.getElementById("decision").innerHTML =
+      score.SCFHS >= score.NCLEX && score.SCFHS >= score.STR
+        ? "<b>GO — SCFHS Readiness Indicated</b>"
+        : "<b>NO-GO — Remediation Required</b>";
+  }
+};
+</script>
+</body>
+</html>
