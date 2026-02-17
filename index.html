@@ -239,6 +239,96 @@ const questions = [
         "Glucose assessment is important but should not delay stroke evaluation."
     }
   }
+},
+{
+  q: "A 60-year-old man with sepsis becomes hypotensive despite IV fluids. BP 82/48, HR 132, RR 28, SpO₂ 92% on oxygen. Urine output is minimal. What should the nurse do FIRST?",
+  options: [
+    { text: "Notify the physician of hypotension", tag: "STR" },
+    { text: "Initiate vasopressor infusion as prescribed", tag: "SCFHS" },
+    { text: "Measure central venous pressure", tag: "NCLEX" },
+    { text: "Document findings and reassess", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "The patient is in septic shock with persistent hypotension. Vasopressors are required to maintain perfusion after fluid resuscitation.",
+    distractors: {
+      STR: "Notification should not delay life-saving intervention.",
+      NCLEX: "Hemodynamic monitoring does not correct shock.",
+      SAFE_DELAY: "Delaying treatment risks multi-organ failure."
+    }
+  }
+},
+{
+  q: "A postoperative patient suddenly becomes unresponsive. No pulse is palpated. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Call the code blue team", tag: "STR" },
+    { text: "Begin high-quality CPR", tag: "SCFHS" },
+    { text: "Attach the cardiac monitor", tag: "NCLEX" },
+    { text: "Check blood pressure again", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate CPR maintains circulation and oxygen delivery and must begin without delay in cardiac arrest.",
+    distractors: {
+      STR: "Help is needed, but CPR must start immediately.",
+      NCLEX: "Monitoring delays resuscitation.",
+      SAFE_DELAY: "Further assessment is inappropriate without a pulse."
+    }
+  }
+},
+{
+  q: "A client with asthma develops severe wheezing and cannot speak full sentences. RR 34, SpO₂ 88%. What should the nurse do FIRST?",
+  options: [
+    { text: "Administer short-acting bronchodilator", tag: "SCFHS" },
+    { text: "Prepare IV corticosteroids", tag: "NCLEX" },
+    { text: "Notify the respiratory therapist", tag: "STR" },
+    { text: "Obtain peak flow measurement", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid bronchodilation reverses acute airway obstruction and improves ventilation.",
+    distractors: {
+      NCLEX: "Steroids are important but not immediate relief.",
+      STR: "Escalation should not delay treatment.",
+      SAFE_DELAY: "Measurement delays urgent airway management."
+    }
+  }
+},
+{
+  q: "A trauma patient arrives with uncontrolled external bleeding from the thigh. BP 90/56, HR 120. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Apply direct pressure to the wound", tag: "SCFHS" },
+    { text: "Establish two large-bore IV lines", tag: "NCLEX" },
+    { text: "Notify the trauma surgeon", tag: "STR" },
+    { text: "Document estimated blood loss", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Controlling active hemorrhage is the priority to prevent hypovolemic shock.",
+    distractors: {
+      NCLEX: "IV access is important but bleeding control comes first.",
+      STR: "Notification should not delay hemorrhage control.",
+      SAFE_DELAY: "Documentation delays life-saving action."
+    }
+  }
+},
+{
+  q: "A patient receiving opioid analgesia becomes difficult to arouse. RR 8/min, SpO₂ 90%. What should the nurse do FIRST?",
+  options: [
+    { text: "Administer naloxone", tag: "SCFHS" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Apply oxygen via face mask", tag: "NCLEX" },
+    { text: "Document sedation level", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Naloxone reverses opioid-induced respiratory depression and prevents arrest.",
+    distractors: {
+      STR: "Notification should not delay reversal.",
+      NCLEX: "Oxygen alone does not correct hypoventilation.",
+      SAFE_DELAY: "Documentation delays emergency treatment."
+    }
+  }
 }
 ];
 
