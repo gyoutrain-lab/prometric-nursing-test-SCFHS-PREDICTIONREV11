@@ -419,7 +419,979 @@ const questions = [
       STR: "Notification occurs alongside protocol initiation."
     }
   }
+},
+{
+  q: "A 65-year-old patient with pneumonia suddenly develops SpO₂ 84% on 2 L nasal cannula, RR 32, HR 128. What should the nurse do FIRST?",
+  options: [
+    { text: "Increase oxygen delivery and position upright", tag: "SCFHS" },
+    { text: "Notify the physician for escalation", tag: "STR" },
+    { text: "Obtain arterial blood gases", tag: "NCLEX" },
+    { text: "Document vitals and continue monitoring", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation and upright positioning address hypoxia before any escalation or diagnostics.",
+    distractors: {
+      STR: "Notification is important but should follow stabilization.",
+      NCLEX: "ABGs provide data but delay urgent intervention.",
+      SAFE_DELAY: "Observation without action risks deterioration."
+    }
+  }
+},
+{
+  q: "A 58-year-old client post-op knee replacement develops sudden shortness of breath and chest pain. HR 120, BP 90/60, SpO₂ 88%. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Apply oxygen and elevate head of bed", tag: "SCFHS" },
+    { text: "Administer PRN analgesic", tag: "SAFE_DELAY" },
+    { text: "Notify the surgeon immediately", tag: "STR" },
+    { text: "Obtain ECG and vital signs", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Presentation suggests pulmonary embolism. Oxygenation and positioning support tissue perfusion while further evaluation occurs.",
+    distractors: {
+      SAFE_DELAY: "Pain management alone delays life-saving interventions.",
+      STR: "Notification should accompany immediate supportive care.",
+      NCLEX: "Diagnostics should not delay stabilization."
+    }
+  }
+},
+{
+  q: "A patient receiving IV heparin has a sudden nosebleed and hematuria. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Stop the heparin infusion immediately", tag: "SCFHS" },
+    { text: "Notify the physician", tag: "STR" },
+    { text: "Apply pressure to the bleeding sites", tag: "NCLEX" },
+    { text: "Document bleeding in the chart", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate cessation of heparin prevents further anticoagulation and potential life-threatening hemorrhage.",
+    distractors: {
+      STR: "Notification is important but should follow stopping the medication.",
+      NCLEX: "Pressure may help local bleeding but does not stop systemic anticoagulation.",
+      SAFE_DELAY: "Documentation without action delays critical intervention."
+    }
+  }
+},
+{
+  q: "A 45-year-old client presents with acute chest pain radiating to the jaw. BP 88/54, HR 110, SpO₂ 92%. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply oxygen and initiate ECG monitoring", tag: "SCFHS" },
+    { text: "Administer PRN nitroglycerin", tag: "SAFE_DELAY" },
+    { text: "Notify the cardiologist", tag: "STR" },
+    { text: "Obtain troponin lab sample", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation and cardiac monitoring stabilize the patient while diagnostics and notification occur.",
+    distractors: {
+      SAFE_DELAY: "PRN medication without monitoring may be unsafe.",
+      STR: "Notification is required but only after stabilization.",
+      NCLEX: "Lab testing is important but should not delay urgent interventions."
+    }
+  }
+},
+{
+  q: "A patient with severe asthma is using accessory muscles and has SpO₂ 85% on 4 L O₂. Peak flow is 180 L/min. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer rapid-acting bronchodilator immediately", tag: "SCFHS" },
+    { text: "Increase oxygen to 6 L/min", tag: "SAFE_DELAY" },
+    { text: "Notify the respiratory therapist", tag: "STR" },
+    { text: "Obtain arterial blood gas", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate bronchodilator therapy relieves bronchospasm and improves oxygenation and ventilation.",
+    distractors: {
+      SAFE_DELAY: "Oxygen alone does not treat airflow obstruction.",
+      STR: "Notification should follow immediate treatment.",
+      NCLEX: "ABGs are diagnostic but do not replace urgent therapy."
+    }
+  }
 }
+{
+  q: "A 70-year-old patient with pneumonia develops confusion and SpO₂ 82% on 2 L O₂. What should the nurse do FIRST?",
+  options: [
+    { text: "Increase oxygen delivery and position upright", tag: "SCFHS" },
+    { text: "Notify the physician", tag: "STR" },
+    { text: "Obtain arterial blood gases", tag: "NCLEX" },
+    { text: "Monitor vitals and document", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation and proper positioning address life-threatening hypoxia before any escalation or diagnostics.",
+    distractors: {
+      STR: "Notification is important but should follow stabilization.",
+      NCLEX: "ABGs are informative but delay urgent intervention.",
+      SAFE_DELAY: "Observation without intervention risks deterioration."
+    }
+  }
+},
+{
+  q: "A postoperative patient reports sudden calf pain and swelling 48 hours after knee surgery. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Assess the leg, elevate, and notify physician", tag: "SCFHS" },
+    { text: "Apply warm compresses", tag: "SAFE_DELAY" },
+    { text: "Administer PRN analgesic", tag: "NCLEX" },
+    { text: "Document the findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden calf pain and swelling may indicate DVT. Immediate assessment and physician notification prevent embolic complications.",
+    distractors: {
+      SAFE_DELAY: "Warm compresses do not address potential thrombus risk.",
+      NCLEX: "Analgesia does not prevent progression or embolism.",
+      STR: "Documentation is necessary but not the urgent first step."
+    }
+  }
+},
+{
+  q: "A 50-year-old client with diabetes reports dizziness and blurred vision. Capillary glucose reads 38 mg/dL. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Administer fast-acting glucose immediately", tag: "SCFHS" },
+    { text: "Recheck blood glucose", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document symptoms and monitor", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptomatic hypoglycemia is life-threatening. Immediate glucose administration prevents seizures or loss of consciousness.",
+    distractors: {
+      NCLEX: "Rechecking delays urgent treatment.",
+      STR: "Provider notification is important but should follow immediate intervention.",
+      SAFE_DELAY: "Monitoring without intervention risks serious harm."
+    }
+  }
+},
+{
+  q: "A client receiving chemotherapy develops sudden shortness of breath and facial swelling. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Assess airway and apply high-flow oxygen", tag: "SCFHS" },
+    { text: "Notify oncologist immediately", tag: "STR" },
+    { text: "Document symptoms and continue observation", tag: "SAFE_DELAY" },
+    { text: "Obtain vital signs and lab tests", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute airway compromise due to anaphylaxis requires immediate oxygenation and airway assessment before any further action.",
+    distractors: {
+      STR: "Notification follows stabilization, not precedes it.",
+      SAFE_DELAY: "Observation alone can be fatal in airway compromise.",
+      NCLEX: "Diagnostics are important but must not delay emergency intervention."
+    }
+  }
+},
+{
+  q: "A 60-year-old patient with heart failure has sudden weight gain of 3 kg in 2 days, increasing dyspnea, and SpO₂ 88% on 2 L O₂. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply oxygen and elevate head of bed", tag: "SCFHS" },
+    { text: "Notify the physician", tag: "STR" },
+    { text: "Obtain daily weights and intake/output", tag: "SAFE_DELAY" },
+    { text: "Administer PRN diuretic", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation and upright positioning improve tissue oxygenation and reduce pulmonary congestion before other interventions.",
+    distractors: {
+      STR: "Notification is important but should not delay stabilization.",
+      SAFE_DELAY: "Weight monitoring alone does not correct hypoxia.",
+      NCLEX: "PRN medication may be required but stabilization comes first."
+    }
+  }
+},
+{
+  q: "A 65-year-old patient with pneumonia has SpO₂ 84% on room air and is restless. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Apply oxygen and elevate head of bed", tag: "SCFHS" },
+    { text: "Notify physician immediately", tag: "STR" },
+    { text: "Obtain chest X-ray", tag: "NCLEX" },
+    { text: "Monitor vital signs for 30 minutes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation addresses hypoxia and prevents deterioration before escalation.",
+    distractors: {
+      STR: "Notification is important but follows stabilization.",
+      NCLEX: "Diagnostics delay urgent treatment.",
+      SAFE_DELAY: "Observation alone risks worsening hypoxia."
+    }
+  }
+},
+{
+  q: "A postoperative patient complains of sudden shortness of breath and pleuritic chest pain. HR 120, SpO₂ 88%. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply oxygen and assess airway", tag: "SCFHS" },
+    { text: "Call the surgeon immediately", tag: "STR" },
+    { text: "Document and monitor", tag: "SAFE_DELAY" },
+    { text: "Obtain ECG and labs", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute respiratory compromise requires immediate airway and oxygen management before diagnostics or notification.",
+    distractors: {
+      STR: "Notification is important but not before stabilization.",
+      SAFE_DELAY: "Monitoring alone can allow deterioration.",
+      NCLEX: "Diagnostics should not delay life-saving intervention."
+    }
+  }
+},
+{
+  q: "A diabetic patient shows confusion, diaphoresis, and glucose 35 mg/dL. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer fast-acting glucose immediately", tag: "SCFHS" },
+    { text: "Recheck glucose to confirm", tag: "NCLEX" },
+    { text: "Notify provider", tag: "STR" },
+    { text: "Document and monitor", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe hypoglycemia is life-threatening; immediate glucose prevents seizures and loss of consciousness.",
+    distractors: {
+      NCLEX: "Rechecking delays urgent treatment.",
+      STR: "Notification must follow stabilization.",
+      SAFE_DELAY: "Monitoring without intervention is unsafe."
+    }
+  }
+},
+{
+  q: "A patient on anticoagulation reports sudden headache and visual changes. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Assess neurological status immediately", tag: "SCFHS" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Obtain CT scan", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid neurological assessment identifies life-threatening intracranial events before imaging or notification.",
+    distractors: {
+      STR: "Provider notification is secondary to immediate assessment.",
+      NCLEX: "Imaging is important but should not delay bedside evaluation.",
+      SAFE_DELAY: "Documentation alone does not prevent deterioration."
+    }
+  }
+},
+{
+  q: "A patient with COPD is increasingly drowsy; SpO₂ 86% on 2 L O₂. What should the nurse do FIRST?",
+  options: [
+    { text: "Initiate noninvasive ventilation (BiPAP)", tag: "SCFHS" },
+    { text: "Increase oxygen to 6 L/min", tag: "SAFE_DELAY" },
+    { text: "Notify the physician", tag: "STR" },
+    { text: "Encourage deep breathing", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "BiPAP improves ventilation and reduces CO₂ retention in acute respiratory acidosis, addressing the underlying problem first.",
+    distractors: {
+      SAFE_DELAY: "High-flow O₂ can worsen CO₂ retention.",
+      STR: "Notification must not delay respiratory support.",
+      NCLEX: "Breathing exercises are insufficient for acute ventilatory failure."
+    }
+  }
+},
+{
+  q: "A patient receiving a blood transfusion develops fever and chills 10 minutes after initiation. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Stop the transfusion immediately", tag: "SCFHS" },
+    { text: "Administer antipyretic", tag: "NCLEX" },
+    { text: "Notify the blood bank", tag: "STR" },
+    { text: "Slow transfusion rate", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping the transfusion immediately prevents further hemolytic reaction and serious complications.",
+    distractors: {
+      NCLEX: "Medications do not stop the reaction.",
+      STR: "Notification comes after stopping infusion.",
+      SAFE_DELAY: "Slowing infusion prolongs exposure to antigen."
+    }
+  }
+},
+{
+  q: "A postoperative patient shows sudden unilateral leg swelling and pain. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Assess leg, elevate, notify physician", tag: "SCFHS" },
+    { text: "Apply heat to the leg", tag: "SAFE_DELAY" },
+    { text: "Administer analgesic", tag: "NCLEX" },
+    { text: "Document findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment and notification prevent DVT progression or pulmonary embolism.",
+    distractors: {
+      SAFE_DELAY: "Heat alone does not mitigate thrombotic risk.",
+      NCLEX: "Analgesics do not address underlying DVT.",
+      STR: "Documentation follows urgent intervention."
+    }
+  }
+},
+{
+  q: "A client receiving chemotherapy develops facial swelling and dyspnea. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Assess airway and apply high-flow oxygen", tag: "SCFHS" },
+    { text: "Notify oncologist", tag: "STR" },
+    { text: "Document and monitor", tag: "SAFE_DELAY" },
+    { text: "Obtain labs", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway compromise from anaphylaxis is life-threatening; immediate oxygenation and assessment are critical.",
+    distractors: {
+      STR: "Notification comes after stabilization.",
+      SAFE_DELAY: "Observation alone is unsafe.",
+      NCLEX: "Labs delay emergency intervention."
+    }
+  }
+},
+{
+  q: "A patient with heart failure reports sudden dyspnea and weight gain over 2 days. SpO₂ 88% on 2 L O₂. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply oxygen and elevate HOB", tag: "SCFHS" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Record weight and I/O", tag: "SAFE_DELAY" },
+    { text: "Administer PRN diuretic", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation and positioning improve oxygen delivery before further interventions.",
+    distractors: {
+      STR: "Notification is secondary to stabilization.",
+      SAFE_DELAY: "Monitoring alone is insufficient.",
+      NCLEX: "Medication comes after immediate support."
+    }
+  }
+},
+{
+  q: "A patient post-thyroidectomy complains of tingling in fingers and mouth. BP 130/78. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Administer IV calcium as prescribed", tag: "SCFHS" },
+    { text: "Document and reassess in 30 minutes", tag: "SAFE_DELAY" },
+    { text: "Notify surgeon immediately", tag: "STR" },
+    { text: "Assess Chvostek’s and Trousseau’s signs", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypocalcemia can progress to tetany; immediate IV calcium stabilizes neuromuscular function.",
+    distractors: {
+      SAFE_DELAY: "Delay risks severe complications.",
+      STR: "Notification should not precede treatment.",
+      NCLEX: "Assessment alone does not correct hypocalcemia."
+    }
+  }
+},
+{
+  q: "A client with acute pulmonary edema presents with pink frothy sputum and SpO₂ 86% on 2 L O₂. What should the nurse do FIRST?",
+  options: [
+    { text: "Increase oxygen delivery via non-rebreather mask", tag: "SCFHS" },
+    { text: "Prepare IV furosemide", tag: "NCLEX" },
+    { text: "Notify rapid response team", tag: "STR" },
+    { text: "Auscultate lungs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Oxygenation addresses immediate hypoxia and stabilizes the patient before pharmacologic interventions.",
+    distractors: {
+      NCLEX: "Diuretics help but do not correct hypoxia first.",
+      STR: "Escalation is secondary to stabilization.",
+      SAFE_DELAY: "Assessment alone delays life-saving support."
+    }
+  }
+},
+{
+  q: "A patient post-hip surgery reports sudden chest pain and shortness of breath. HR 120, SpO₂ 90%. What is the FIRST nursing action?",
+  options: [
+    { text: "Apply oxygen and elevate head of bed", tag: "SCFHS" },
+    { text: "Administer PRN analgesics", tag: "SAFE_DELAY" },
+    { text: "Request STAT chest X-ray", tag: "NCLEX" },
+    { text: "Notify surgeon immediately", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation stabilizes the patient while diagnostic evaluation and notification follow.",
+    distractors: {
+      SAFE_DELAY: "Analgesics do not address hypoxia.",
+      NCLEX: "Diagnostics delay urgent supportive care.",
+      STR: "Notification is secondary to stabilization."
+    }
+  }
+},
+{
+  q: "A patient with stroke develops sudden unilateral weakness; time of onset unknown. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Perform rapid neurological assessment", tag: "SCFHS" },
+    { text: "Prepare for CT imaging", tag: "NCLEX" },
+    { text: "Notify stroke team", tag: "STR" },
+    { text: "Check blood glucose", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid bedside neurological assessment establishes baseline and guides urgent interventions.",
+    distractors: {
+      NCLEX: "Imaging follows initial assessment.",
+      STR: "Team notification comes after evaluation.",
+      SAFE_DELAY: "Glucose check is important but should not delay stroke assessment."
+    }
+  }
+},
+{
+  q: "A postoperative patient develops sudden tachycardia, hypotension, and pallor. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess for hemorrhage and apply oxygen", tag: "SCFHS" },
+    { text: "Notify surgeon immediately", tag: "STR" },
+    { text: "Check lab results", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment for bleeding and oxygenation addresses life-threatening complications before escalation.",
+    distractors: {
+      STR: "Notification follows stabilization.",
+      NCLEX: "Lab checks delay urgent intervention.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A patient reports acute abdominal pain and hypotension postoperatively. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Assess vital signs and apply oxygen", tag: "SCFHS" },
+    { text: "Notify surgeon immediately", tag: "STR" },
+    { text: "Prepare IV analgesics", tag: "NCLEX" },
+    { text: "Document findings", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early vital sign assessment and oxygenation stabilize the patient in potentially life-threatening shock.",
+    distractors: {
+      STR: "Notification is secondary to stabilization.",
+      NCLEX: "Analgesics delay emergency management.",
+      SAFE_DELAY: "Documentation alone does not prevent deterioration."
+    }
+  }
+},
+{
+  q: "A patient with COPD develops sudden worsening dyspnea and PaCO₂ 65 mmHg. SpO₂ 85% on 2 L O₂. What should the nurse do FIRST?",
+  options: [
+    { text: "Start noninvasive ventilation (BiPAP)", tag: "SCFHS" },
+    { text: "Increase O₂ to 6 L/min", tag: "SAFE_DELAY" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Encourage pursed-lip breathing", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Noninvasive ventilation improves alveolar ventilation and reduces CO₂ retention before any escalation.",
+    distractors: {
+      SAFE_DELAY: "High-flow O₂ can worsen hypercapnia.",
+      STR: "Notification must not delay intervention.",
+      NCLEX: "Breathing exercises are insufficient for acute failure."
+    }
+  }
+},
+{
+  q: "A diabetic patient becomes confused and diaphoretic; glucose 40 mg/dL. What is the FIRST nursing action?",
+  options: [
+    { text: "Administer IV dextrose immediately", tag: "SCFHS" },
+    { text: "Recheck blood glucose", tag: "NCLEX" },
+    { text: "Notify provider", tag: "STR" },
+    { text: "Document and monitor", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptomatic hypoglycemia is life-threatening; immediate correction is required.",
+    distractors: {
+      NCLEX: "Rechecking delays urgent treatment.",
+      STR: "Notification comes after intervention.",
+      SAFE_DELAY: "Monitoring without treatment is unsafe."
+    }
+  }
+},
+{
+  q: "A patient post-hip surgery shows unilateral leg swelling and erythema. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Assess leg, elevate, and notify physician", tag: "SCFHS" },
+    { text: "Apply heat locally", tag: "SAFE_DELAY" },
+    { text: "Administer PRN analgesic", tag: "NCLEX" },
+    { text: "Document findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment and notification prevent DVT progression and pulmonary embolism.",
+    distractors: {
+      SAFE_DELAY: "Heat does not prevent thromboembolic risk.",
+      NCLEX: "Analgesics do not address the underlying risk.",
+      STR: "Documentation is secondary to stabilization."
+    }
+  }
+},
+{
+  q: "A patient develops sudden dyspnea and hypotension during hemodialysis. What is the FIRST nursing action?",
+  options: [
+    { text: "Stop dialysis, assess airway, and apply oxygen", tag: "SCFHS" },
+    { text: "Notify nephrologist immediately", tag: "STR" },
+    { text: "Check machine settings", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate cessation and oxygenation prevent further hypoxia or cardiovascular compromise.",
+    distractors: {
+      STR: "Notification follows stabilization.",
+      NCLEX: "Machine check delays life-saving care.",
+      SAFE_DELAY: "Documentation alone does not prevent deterioration."
+    }
+  }
+},
+{
+  q: "A postoperative patient shows sudden confusion, hypotension, and tachycardia. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess for internal bleeding and apply oxygen", tag: "SCFHS" },
+    { text: "Notify surgeon", tag: "STR" },
+    { text: "Check lab results", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid assessment identifies life-threatening hemorrhage before notification or labs.",
+    distractors: {
+      STR: "Notification comes after stabilization.",
+      NCLEX: "Labs delay immediate intervention.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient with acute asthma exacerbation has wheezing and SpO₂ 86% on room air. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Administer prescribed inhaled bronchodilator immediately", tag: "SCFHS" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Obtain arterial blood gas", tag: "NCLEX" },
+    { text: "Monitor vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid bronchodilator therapy relieves bronchospasm and improves oxygenation before escalation.",
+    distractors: {
+      STR: "Notification comes after immediate intervention.",
+      NCLEX: "ABG delays urgent treatment.",
+      SAFE_DELAY: "Monitoring alone does not prevent hypoxia."
+    }
+  }
+},
+{
+  q: "A patient with a tracheostomy develops sudden respiratory distress. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Check for obstruction and suction if needed", tag: "SCFHS" },
+    { text: "Call respiratory therapy", tag: "STR" },
+    { text: "Obtain chest X-ray", tag: "NCLEX" },
+    { text: "Document respiratory rate", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway obstruction is immediately life-threatening; prompt suction restores airway patency.",
+    distractors: {
+      STR: "Calling therapy delays intervention.",
+      NCLEX: "Imaging is secondary to airway management.",
+      SAFE_DELAY: "Documentation alone does not address obstruction."
+    }
+  }
+},
+{
+  q: "A patient post-thyroidectomy reports tingling around the mouth. BP 130/80. What should the nurse do FIRST?",
+  options: [
+    { text: "Administer IV calcium as prescribed", tag: "SCFHS" },
+    { text: "Assess Chvostek’s and Trousseau’s signs", tag: "NCLEX" },
+    { text: "Notify surgeon", tag: "STR" },
+    { text: "Document findings", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early IV calcium prevents progression to tetany and laryngospasm.",
+    distractors: {
+      NCLEX: "Assessment alone does not treat hypocalcemia.",
+      STR: "Notification is secondary to treatment.",
+      SAFE_DELAY: "Documentation does not prevent complications."
+    }
+  }
+},
+{
+  q: "A patient with chest pain and hypotension post-MI develops dyspnea. What is the FIRST nursing action?",
+  options: [
+    { text: "Apply oxygen and monitor vitals", tag: "SCFHS" },
+    { text: "Notify cardiologist", tag: "STR" },
+    { text: "Obtain ECG", tag: "NCLEX" },
+    { text: "Document pain level", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation stabilizes the patient before further evaluation or notification.",
+    distractors: {
+      STR: "Notification is secondary to stabilization.",
+      NCLEX: "ECG delays urgent supportive care.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A diabetic patient is confused, sweating, and glucose reads 38 mg/dL. What should the nurse do FIRST?",
+  options: [
+    { text: "Administer IV dextrose immediately", tag: "SCFHS" },
+    { text: "Recheck glucose", tag: "NCLEX" },
+    { text: "Notify provider", tag: "STR" },
+    { text: "Document and monitor", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptomatic hypoglycemia is life-threatening; immediate correction is required.",
+    distractors: {
+      NCLEX: "Rechecking delays urgent treatment.",
+      STR: "Notification comes after stabilization.",
+      SAFE_DELAY: "Monitoring alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient develops sudden unilateral leg swelling and pain postoperatively. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Assess leg, elevate, and notify physician", tag: "SCFHS" },
+    { text: "Apply heat locally", tag: "SAFE_DELAY" },
+    { text: "Administer PRN analgesics", tag: "NCLEX" },
+    { text: "Document findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment and notification prevent DVT progression and PE.",
+    distractors: {
+      SAFE_DELAY: "Heat alone does not prevent thromboembolic risk.",
+      NCLEX: "Analgesics do not address underlying DVT.",
+      STR: "Documentation is secondary to stabilization."
+    }
+  }
+},
+{
+  q: "A patient on anticoagulants reports sudden severe headache. What is the FIRST nursing action?",
+  options: [
+    { text: "Assess neurological status immediately", tag: "SCFHS" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Obtain CT scan", tag: "NCLEX" },
+    { text: "Document findings", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early neurological assessment identifies life-threatening intracranial events before escalation.",
+    distractors: {
+      STR: "Notification comes after assessment.",
+      NCLEX: "CT scan is secondary to bedside evaluation.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A patient with acute pulmonary edema presents with frothy sputum and SpO₂ 85%. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Increase oxygen via non-rebreather mask", tag: "SCFHS" },
+    { text: "Prepare IV diuretic", tag: "NCLEX" },
+    { text: "Notify rapid response team", tag: "STR" },
+    { text: "Auscultate lungs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation stabilizes hypoxia before any pharmacologic or escalation interventions.",
+    distractors: {
+      NCLEX: "Diuretics help but do not address immediate hypoxia.",
+      STR: "Escalation is secondary to stabilization.",
+      SAFE_DELAY: "Assessment alone delays life-saving care."
+    }
+  }
+},
+{
+  q: "A postoperative patient develops sudden hypotension and tachycardia. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess for bleeding and apply oxygen", tag: "SCFHS" },
+    { text: "Notify surgeon", tag: "STR" },
+    { text: "Check lab results", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early assessment and stabilization prevent life-threatening hemorrhage complications.",
+    distractors: {
+      STR: "Notification follows stabilization.",
+      NCLEX: "Lab checks delay urgent intervention.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient with acute stroke suddenly becomes drowsy with slurred speech. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Perform rapid neurological assessment", tag: "SCFHS" },
+    { text: "Notify stroke team", tag: "STR" },
+    { text: "Obtain CT scan", tag: "NCLEX" },
+    { text: "Check blood glucose", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate neurological assessment identifies life-threatening deficits and guides interventions.",
+    distractors: {
+      STR: "Notification follows assessment.",
+      NCLEX: "Imaging is secondary to bedside assessment.",
+      SAFE_DELAY: "Glucose check delays urgent intervention."
+    }
+  }
+},
+{
+  q: "A patient on anticoagulants develops sudden hematuria and hypotension. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess bleeding and apply oxygen", tag: "SCFHS" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Check labs", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid assessment prevents worsening hemorrhage and guides immediate intervention.",
+    distractors: {
+      STR: "Notification comes after stabilization.",
+      NCLEX: "Labs delay urgent care.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A diabetic patient is found confused, sweating, and pale. Glucose reads 32 mg/dL. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Administer IV dextrose immediately", tag: "SCFHS" },
+    { text: "Recheck blood glucose", tag: "NCLEX" },
+    { text: "Notify provider", tag: "STR" },
+    { text: "Document and monitor", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptomatic hypoglycemia is life-threatening; immediate glucose administration prevents seizures or loss of consciousness.",
+    distractors: {
+      NCLEX: "Rechecking delays urgent treatment.",
+      STR: "Notification should not delay intervention.",
+      SAFE_DELAY: "Observation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A postoperative patient suddenly reports shortness of breath and chest pain. SpO₂ 89%. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply oxygen and elevate HOB", tag: "SCFHS" },
+    { text: "Notify surgeon", tag: "STR" },
+    { text: "Request STAT chest X-ray", tag: "NCLEX" },
+    { text: "Document vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation stabilizes hypoxia while further evaluation is arranged.",
+    distractors: {
+      STR: "Notification is secondary to oxygenation.",
+      NCLEX: "Imaging delays urgent supportive care.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A patient on hemodialysis develops sudden hypotension and dyspnea. What is the FIRST nursing action?",
+  options: [
+    { text: "Stop dialysis and assess airway/breathing", tag: "SCFHS" },
+    { text: "Notify nephrologist", tag: "STR" },
+    { text: "Check machine settings", tag: "NCLEX" },
+    { text: "Document vitals", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping dialysis and supporting oxygenation prevents life-threatening complications.",
+    distractors: {
+      STR: "Notification comes after stabilization.",
+      NCLEX: "Checking machine delays urgent care.",
+      SAFE_DELAY: "Documentation alone does not address risk."
+    }
+  }
+},
+{
+  q: "A patient suddenly develops unilateral leg swelling and pain postoperatively. What is the PRIORITY nursing action?",
+  options: [
+    { text: "Assess leg, elevate, and notify physician", tag: "SCFHS" },
+    { text: "Apply heat locally", tag: "SAFE_DELAY" },
+    { text: "Administer PRN analgesics", tag: "NCLEX" },
+    { text: "Document findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment prevents progression of DVT and potential pulmonary embolism.",
+    distractors: {
+      SAFE_DELAY: "Heat alone does not prevent clot formation.",
+      NCLEX: "Analgesics do not treat underlying DVT.",
+      STR: "Documentation is secondary to urgent intervention."
+    }
+  }
+},
+{
+  q: "A patient with acute MI develops hypotension and chest pain. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply oxygen and monitor vitals", tag: "SCFHS" },
+    { text: "Notify cardiologist", tag: "STR" },
+    { text: "Obtain ECG", tag: "NCLEX" },
+    { text: "Document pain level", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Oxygenation stabilizes the patient and prevents further ischemia before further interventions.",
+    distractors: {
+      STR: "Notification is secondary to immediate support.",
+      NCLEX: "ECG delays urgent care.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A patient develops sudden wheezing, dyspnea, and SpO₂ 84% due to an asthma attack. What is the PRIORITY action?",
+  options: [
+    { text: "Administer inhaled bronchodilator immediately", tag: "SCFHS" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Obtain arterial blood gas", tag: "NCLEX" },
+    { text: "Monitor vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate bronchodilation improves oxygenation and prevents respiratory failure.",
+    distractors: {
+      STR: "Notification comes after initial intervention.",
+      NCLEX: "ABG delays urgent therapy.",
+      SAFE_DELAY: "Observation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient with a tracheostomy develops sudden respiratory distress. What should the nurse do FIRST?",
+  options: [
+    { text: "Check for obstruction and suction", tag: "SCFHS" },
+    { text: "Call respiratory therapy", tag: "STR" },
+    { text: "Obtain chest X-ray", tag: "NCLEX" },
+    { text: "Document respiratory rate", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate suction restores airway patency and prevents hypoxia.",
+    distractors: {
+      STR: "Calling therapy delays urgent intervention.",
+      NCLEX: "Imaging is secondary to airway management.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient post-thyroidectomy reports tingling in fingers and mouth. What is the FIRST nursing action?",
+  options: [
+    { text: "Administer IV calcium as prescribed", tag: "SCFHS" },
+    { text: "Assess Chvostek’s and Trousseau’s signs", tag: "NCLEX" },
+    { text: "Notify surgeon", tag: "STR" },
+    { text: "Document findings", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "IV calcium prevents tetany and airway compromise from hypocalcemia.",
+    distractors: {
+      NCLEX: "Assessment alone does not correct hypocalcemia.",
+      STR: "Notification comes after treatment.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient receiving blood transfusion develops fever, chills, and flank pain. What is the FIRST nursing action?",
+  options: [
+    { text: "Stop transfusion immediately", tag: "SCFHS" },
+    { text: "Administer antipyretics", tag: "NCLEX" },
+    { text: "Notify blood bank", tag: "STR" },
+    { text: "Slow transfusion rate", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping the transfusion prevents further hemolytic reaction and complications.",
+    distractors: {
+      NCLEX: "Medication does not address cause.",
+      STR: "Notification follows immediate cessation.",
+      SAFE_DELAY: "Slowing infusion prolongs exposure."
+    }
+  }
+},
+{
+  q: "A patient with heart failure develops pink frothy sputum and SpO₂ 86%. What is the PRIORITY action?",
+  options: [
+    { text: "Increase oxygen via non-rebreather mask", tag: "SCFHS" },
+    { text: "Prepare IV furosemide", tag: "NCLEX" },
+    { text: "Notify rapid response team", tag: "STR" },
+    { text: "Auscultate lung sounds", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate oxygenation reduces hypoxia before other interventions.",
+    distractors: {
+      NCLEX: "Diuretics do not immediately correct hypoxia.",
+      STR: "Escalation is secondary to stabilization.",
+      SAFE_DELAY: "Assessment alone delays care."
+    }
+  }
+},
+{
+  q: "A postoperative patient develops sudden hypotension and tachycardia. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess for bleeding and apply oxygen", tag: "SCFHS" },
+    { text: "Notify surgeon", tag: "STR" },
+    { text: "Check lab results", tag: "NCLEX" },
+    { text: "Document vitals", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid assessment and stabilization prevent life-threatening hemorrhage.",
+    distractors: {
+      STR: "Notification comes after initial intervention.",
+      NCLEX: "Labs delay urgent care.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient with acute stroke suddenly develops facial droop and slurred speech. What is the FIRST nursing action?",
+  options: [
+    { text: "Perform rapid neurological assessment", tag: "SCFHS" },
+    { text: "Notify stroke team", tag: "STR" },
+    { text: "Obtain CT scan", tag: "NCLEX" },
+    { text: "Check blood glucose", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment identifies deficits and guides urgent interventions.",
+    distractors: {
+      STR: "Notification comes after assessment.",
+      NCLEX: "Imaging is secondary.",
+      SAFE_DELAY: "Glucose check delays urgent care."
+    }
+  }
+},
+{
+  q: "A patient with COPD becomes increasingly drowsy, SpO₂ 88% on 4 L O₂. ABG: pH 7.28, PaCO₂ 62 mmHg. What is the PRIORITY action?",
+  options: [
+    { text: "Prepare for noninvasive ventilation (BiPAP)", tag: "SCFHS" },
+    { text: "Increase oxygen flow", tag: "SAFE_DELAY" },
+    { text: "Notify physician", tag: "STR" },
+    { text: "Encourage deep breathing and coughing", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "BiPAP corrects CO₂ retention and prevents respiratory failure.",
+    distractors: {
+      SAFE_DELAY: "Increasing O₂ alone worsens CO₂ retention.",
+      STR: "Notification follows stabilization.",
+      NCLEX: "Breathing exercises are insufficient."
+    }
+  }
+},
 ];
 
 /* ---------- ENGINE ---------- */
