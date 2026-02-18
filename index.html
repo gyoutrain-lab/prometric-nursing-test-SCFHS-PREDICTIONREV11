@@ -1787,6 +1787,168 @@ const questions = [
       SAFE_DELAY: "Assessment alone delays lifesaving action."
     }
   }
+},
+{
+  q: "A patient with acute stroke suddenly vomits and becomes drowsy. Blood pressure is 210/110 mmHg. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Maintain airway and elevate head of bed 30 degrees", tag: "SCFHS" },
+    { text: "Administer antihypertensive medication", tag: "NCLEX" },
+    { text: "Notify the stroke team immediately", tag: "STR" },
+    { text: "Prepare for urgent CT scan", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden neurologic decline suggests increased intracranial pressure. Airway protection and positioning prevent aspiration and further rise in ICP.",
+    distractors: {
+      NCLEX: "Blood pressure reduction may worsen cerebral perfusion if done prematurely.",
+      STR: "Escalation is required but must follow immediate stabilization.",
+      SAFE_DELAY: "Transport without stabilization increases risk."
+    }
+  }
+},
+{
+  q: "A patient with severe hyponatremia (Na⁺ 118 mEq/L) develops seizures. What should the nurse do FIRST?",
+  options: [
+    { text: "Administer hypertonic saline as prescribed", tag: "SCFHS" },
+    { text: "Apply seizure precautions", tag: "NCLEX" },
+    { text: "Notify the physician immediately", tag: "STR" },
+    { text: "Recheck serum sodium level", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Symptomatic hyponatremia requires immediate correction to prevent cerebral edema and herniation.",
+    distractors: {
+      NCLEX: "Safety measures do not treat the underlying cause.",
+      STR: "Notification must not delay corrective therapy.",
+      SAFE_DELAY: "Rechecking labs delays lifesaving intervention."
+    }
+  }
+},
+{
+  q: "A mechanically ventilated patient suddenly has high peak airway pressures and decreased oxygen saturation. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Assess for kinks or obstruction in the ventilator circuit", tag: "SCFHS" },
+    { text: "Increase FiO₂ to 100%", tag: "NCLEX" },
+    { text: "Notify respiratory therapy", tag: "STR" },
+    { text: "Administer sedation", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Mechanical causes must be ruled out immediately as they are rapidly correctable and life-threatening.",
+    distractors: {
+      NCLEX: "Increasing oxygen does not resolve obstruction.",
+      STR: "Help is useful but immediate assessment is faster.",
+      SAFE_DELAY: "Sedation may worsen hypoventilation."
+    }
+  }
+},
+{
+  q: "A patient with suspected tension pneumothorax develops tracheal deviation and hypotension. What should the nurse do FIRST?",
+  options: [
+    { text: "Prepare for immediate needle decompression", tag: "SCFHS" },
+    { text: "Administer high-flow oxygen", tag: "NCLEX" },
+    { text: "Notify the physician STAT", tag: "STR" },
+    { text: "Obtain a chest X-ray", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Tension pneumothorax is rapidly fatal without immediate decompression.",
+    distractors: {
+      NCLEX: "Oxygen is supportive but does not relieve pressure.",
+      STR: "Escalation should not delay emergency intervention.",
+      SAFE_DELAY: "Imaging delays lifesaving treatment."
+    }
+  }
+},
+{
+  q: "A patient with gastrointestinal bleeding has a sudden drop in blood pressure and altered mental status. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Activate massive transfusion protocol", tag: "SCFHS" },
+    { text: "Check hemoglobin level", tag: "NCLEX" },
+    { text: "Notify the attending physician", tag: "STR" },
+    { text: "Document vital sign changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs of hemorrhagic shock require immediate blood replacement to restore perfusion.",
+    distractors: {
+      NCLEX: "Laboratory confirmation delays resuscitation.",
+      STR: "Notification should not delay protocol activation.",
+      SAFE_DELAY: "Documentation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient receiving continuous insulin infusion develops sudden confusion and diaphoresis. What should the nurse do FIRST?",
+  options: [
+    { text: "Stop insulin and administer IV dextrose", tag: "SCFHS" },
+    { text: "Recheck capillary glucose", tag: "NCLEX" },
+    { text: "Notify the provider", tag: "STR" },
+    { text: "Monitor neurological status", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Neuroglycopenic symptoms indicate hypoglycemia requiring immediate reversal.",
+    distractors: {
+      NCLEX: "Rechecking delays urgent treatment.",
+      STR: "Notification should not precede intervention.",
+      SAFE_DELAY: "Monitoring without treatment risks seizure or coma."
+    }
+  }
+},
+{
+  q: "A patient with newly placed tracheostomy becomes restless and cyanotic. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Assess tracheostomy patency and suction if needed", tag: "SCFHS" },
+    { text: "Increase oxygen concentration", tag: "NCLEX" },
+    { text: "Call for assistance", tag: "STR" },
+    { text: "Loosen tracheostomy ties", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway obstruction is the most immediate and correctable cause of distress.",
+    distractors: {
+      NCLEX: "Oxygen does not bypass obstruction.",
+      STR: "Assistance is helpful but assessment is immediate.",
+      SAFE_DELAY: "Loosening ties does not restore airway."
+    }
+  }
+},
+{
+  q: "A patient with suspected sepsis has a lactate level of 5.2 mmol/L. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Initiate rapid IV fluid resuscitation", tag: "SCFHS" },
+    { text: "Administer broad-spectrum antibiotics", tag: "NCLEX" },
+    { text: "Notify the physician", tag: "STR" },
+    { text: "Repeat lactate measurement", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Elevated lactate reflects tissue hypoperfusion requiring immediate circulatory support.",
+    distractors: {
+      NCLEX: "Antibiotics are essential but fluids address immediate shock.",
+      STR: "Notification should not delay resuscitation.",
+      SAFE_DELAY: "Repeating labs delays intervention."
+    }
+  }
+},
+{
+  q: "A patient with acute heart failure suddenly develops pink frothy sputum and severe anxiety. What should the nurse do FIRST?",
+  options: [
+    { text: "Apply high-flow oxygen and sit the patient upright", tag: "SCFHS" },
+    { text: "Administer IV diuretics", tag: "NCLEX" },
+    { text: "Notify the cardiology team", tag: "STR" },
+    { text: "Reassure the patient", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute pulmonary edema requires immediate improvement of oxygenation and ventilation.",
+    distractors: {
+      NCLEX: "Diuretics help but do not provide immediate oxygenation.",
+      STR: "Escalation follows stabilization.",
+      SAFE_DELAY: "Reassurance alone is inadequate."
+    }
+  }
 }
 ];
 
