@@ -1391,6 +1391,402 @@ const questions = [
       NCLEX: "Breathing exercises are insufficient."
     }
   }
+},
+{
+  q: "A patient with septic shock remains hypotensive despite 2 liters of IV crystalloids. MAP is 58 mmHg. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Initiate vasopressor infusion as prescribed", tag: "SCFHS" },
+    { text: "Increase IV fluid rate", tag: "NCLEX" },
+    { text: "Notify the intensivist", tag: "STR" },
+    { text: "Reassess urine output", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Persistent hypotension after adequate fluid resuscitation indicates the need for vasopressors to maintain organ perfusion.",
+    distractors: {
+      NCLEX: "Additional fluids risk fluid overload without improving perfusion.",
+      STR: "Notification should not delay hemodynamic stabilization.",
+      SAFE_DELAY: "Assessment alone delays lifesaving therapy."
+    }
+  }
+},
+{
+  q: "A ventilated patient suddenly develops high peak airway pressures and absent breath sounds on the right. What should the nurse do FIRST?",
+  options: [
+    { text: "Suspect pneumothorax and prepare for emergency intervention", tag: "SCFHS" },
+    { text: "Suction the endotracheal tube", tag: "NCLEX" },
+    { text: "Notify respiratory therapy", tag: "STR" },
+    { text: "Check ventilator alarms", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden unilateral breath sound loss with high pressures suggests tension pneumothorax requiring immediate action.",
+    distractors: {
+      NCLEX: "Suctioning does not resolve lung collapse.",
+      STR: "Escalation should not delay recognition of a life-threatening emergency.",
+      SAFE_DELAY: "Alarm checks delay critical intervention."
+    }
+  }
+},
+{
+  q: "A patient with acute pancreatitis reports severe epigastric pain radiating to the back and develops hypotension. What is the nurse’s PRIORITY?",
+  options: [
+    { text: "Initiate aggressive IV fluid resuscitation", tag: "SCFHS" },
+    { text: "Administer opioid analgesia", tag: "NCLEX" },
+    { text: "Notify gastroenterology", tag: "STR" },
+    { text: "Insert nasogastric tube", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Fluid shifts and third spacing make volume resuscitation the priority to prevent shock.",
+    distractors: {
+      NCLEX: "Pain control is important but secondary to perfusion.",
+      STR: "Consultation should not delay stabilization.",
+      SAFE_DELAY: "NG decompression is not the immediate priority."
+    }
+  }
+},
+{
+  q: "A patient with head trauma shows decreasing level of consciousness and unequal pupils. What is the FIRST nursing action?",
+  options: [
+    { text: "Elevate head of bed and ensure airway protection", tag: "SCFHS" },
+    { text: "Notify neurosurgeon", tag: "STR" },
+    { text: "Prepare for CT scan", tag: "NCLEX" },
+    { text: "Document neurological changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway and intracranial pressure control are priorities in acute neurological deterioration.",
+    distractors: {
+      STR: "Notification should follow immediate stabilization.",
+      NCLEX: "Imaging is secondary to airway and perfusion.",
+      SAFE_DELAY: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A patient receiving magnesium sulfate for preeclampsia has a respiratory rate of 10/min and absent reflexes. What should the nurse do FIRST?",
+  options: [
+    { text: "Stop magnesium infusion and prepare calcium gluconate", tag: "SCFHS" },
+    { text: "Increase oxygen delivery", tag: "NCLEX" },
+    { text: "Notify obstetrician", tag: "STR" },
+    { text: "Monitor fetal heart rate", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs of magnesium toxicity require immediate cessation and antidote preparation.",
+    distractors: {
+      NCLEX: "Oxygen does not reverse toxicity.",
+      STR: "Notification must not delay antidote preparation.",
+      SAFE_DELAY: "Fetal monitoring is secondary to maternal stabilization."
+    }
+  }
+},
+{
+  q: "A patient with liver failure develops confusion and asterixis. Ammonia level is elevated. What is the PRIORITY nursing intervention?",
+  options: [
+    { text: "Administer lactulose as prescribed", tag: "SCFHS" },
+    { text: "Restrict dietary protein", tag: "NCLEX" },
+    { text: "Notify hepatology", tag: "STR" },
+    { text: "Document neurological status", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Lactulose reduces ammonia absorption and prevents worsening encephalopathy.",
+    distractors: {
+      NCLEX: "Dietary changes are not immediate treatment.",
+      STR: "Consultation should not delay therapy.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A trauma patient suddenly becomes restless with falling blood pressure and distended neck veins. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Suspect cardiac tamponade and prepare for emergency response", tag: "SCFHS" },
+    { text: "Administer IV fluids rapidly", tag: "NCLEX" },
+    { text: "Notify trauma surgeon", tag: "STR" },
+    { text: "Reassess vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Beck’s triad suggests tamponade requiring immediate recognition and escalation.",
+    distractors: {
+      NCLEX: "Fluids alone do not relieve tamponade.",
+      STR: "Notification must not delay recognition.",
+      SAFE_DELAY: "Assessment alone delays lifesaving action."
+    }
+  }
+},
+{
+  q: "A patient with diabetic ketoacidosis is receiving IV insulin. Blood glucose is decreasing appropriately, but potassium level is 3.1 mEq/L. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Hold insulin infusion and administer potassium", tag: "SCFHS" },
+    { text: "Continue insulin as ordered", tag: "NCLEX" },
+    { text: "Notify the physician of hypokalemia", tag: "STR" },
+    { text: "Recheck potassium level in one hour", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Insulin drives potassium into cells and may precipitate fatal arrhythmias in hypokalemia. Potassium correction takes priority.",
+    distractors: {
+      NCLEX: "Continuing insulin risks worsening hypokalemia.",
+      STR: "Notification should not delay corrective action.",
+      SAFE_DELAY: "Waiting increases risk of cardiac instability."
+    }
+  }
+},
+{
+  q: "A patient with acute GI bleeding becomes tachycardic and hypotensive. Hemoglobin is pending. What should the nurse do FIRST?",
+  options: [
+    { text: "Initiate large-bore IV access and fluid resuscitation", tag: "SCFHS" },
+    { text: "Prepare the patient for endoscopy", tag: "NCLEX" },
+    { text: "Notify the gastroenterologist", tag: "STR" },
+    { text: "Check stool for occult blood", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hemodynamic instability indicates active bleeding requiring immediate circulatory support.",
+    distractors: {
+      NCLEX: "Diagnostic procedures follow stabilization.",
+      STR: "Consultation should not delay resuscitation.",
+      SAFE_DELAY: "Testing delays lifesaving intervention."
+    }
+  }
+},
+{
+  q: "A patient with chronic kidney disease develops peaked T waves on ECG. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Administer calcium gluconate as prescribed", tag: "SCFHS" },
+    { text: "Administer sodium polystyrene sulfonate", tag: "NCLEX" },
+    { text: "Notify the nephrologist", tag: "STR" },
+    { text: "Recheck serum potassium level", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Calcium stabilizes the cardiac membrane and prevents lethal arrhythmias in hyperkalemia.",
+    distractors: {
+      NCLEX: "Potassium removal is important but not immediate cardiac protection.",
+      STR: "Notification must not delay emergency treatment.",
+      SAFE_DELAY: "Delaying intervention increases arrhythmia risk."
+    }
+  }
+},
+{
+  q: "A patient on mechanical ventilation becomes agitated and attempts to self-extubate. What should the nurse do FIRST?",
+  options: [
+    { text: "Assess airway patency and ventilator synchrony", tag: "SCFHS" },
+    { text: "Increase sedation infusion", tag: "NCLEX" },
+    { text: "Call for assistance", tag: "STR" },
+    { text: "Apply physical restraints", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Agitation may indicate hypoxia or ventilator mismatch, which must be assessed before sedation or restraints.",
+    distractors: {
+      NCLEX: "Sedation may mask respiratory compromise.",
+      STR: "Assistance is helpful but assessment is immediate priority.",
+      SAFE_DELAY: "Restraints do not address underlying cause."
+    }
+  }
+},
+{
+  q: "A patient with spinal cord injury suddenly develops severe headache, flushing, and hypertension. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Sit the patient upright and remove noxious stimuli", tag: "SCFHS" },
+    { text: "Administer antihypertensive medication", tag: "NCLEX" },
+    { text: "Notify the provider immediately", tag: "STR" },
+    { text: "Reassess blood pressure in 15 minutes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "These findings indicate autonomic dysreflexia. Immediate nonpharmacologic interventions prevent stroke and seizures.",
+    distractors: {
+      NCLEX: "Medications are secondary if initial measures fail.",
+      STR: "Provider notification should not delay immediate action.",
+      SAFE_DELAY: "Delay risks catastrophic hypertension."
+    }
+  }
+},
+{
+  q: "A patient receiving total parenteral nutrition develops fever and chills. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Stop the infusion and assess for catheter-related infection", tag: "SCFHS" },
+    { text: "Administer antipyretics", tag: "NCLEX" },
+    { text: "Notify the physician", tag: "STR" },
+    { text: "Document findings and monitor", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "TPN is a high-risk source of bloodstream infection and must be stopped immediately.",
+    distractors: {
+      NCLEX: "Treating fever does not address infection source.",
+      STR: "Notification should not delay stopping infusion.",
+      SAFE_DELAY: "Observation alone is unsafe."
+    }
+  }
+},
+{
+  q: "A patient with severe asthma shows silent chest and decreasing oxygen saturation. What should the nurse do FIRST?",
+  options: [
+    { text: "Prepare for intubation and mechanical ventilation", tag: "SCFHS" },
+    { text: "Administer additional bronchodilators", tag: "NCLEX" },
+    { text: "Notify respiratory therapy", tag: "STR" },
+    { text: "Encourage pursed-lip breathing", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Silent chest indicates minimal air movement and impending respiratory failure.",
+    distractors: {
+      NCLEX: "Bronchodilators are ineffective at this stage.",
+      STR: "Notification should not delay airway management.",
+      SAFE_DELAY: "Breathing techniques are insufficient."
+    }
+  }
+},
+{
+  q: "A patient receiving thrombolytic therapy suddenly develops severe headache and vomiting. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Stop the infusion and assess for intracranial bleeding", tag: "SCFHS" },
+    { text: "Administer antiemetics", tag: "NCLEX" },
+    { text: "Notify the provider", tag: "STR" },
+    { text: "Reassess neurological status in 30 minutes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "These are signs of intracranial hemorrhage, a life-threatening complication requiring immediate cessation.",
+    distractors: {
+      NCLEX: "Symptom management delays emergency response.",
+      STR: "Notification follows stopping the infusion.",
+      SAFE_DELAY: "Delay risks irreversible injury."
+    }
+  }
+},
+{
+  q: "A patient with septic shock remains hypotensive despite 2 liters of IV crystalloids. MAP is 58 mmHg. What is the nurse’s PRIORITY action?",
+  options: [
+    { text: "Initiate vasopressor infusion as prescribed", tag: "SCFHS" },
+    { text: "Increase IV fluid rate", tag: "NCLEX" },
+    { text: "Notify the intensivist", tag: "STR" },
+    { text: "Reassess urine output", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Persistent hypotension after adequate fluid resuscitation indicates the need for vasopressors to maintain organ perfusion.",
+    distractors: {
+      NCLEX: "Additional fluids risk fluid overload without improving perfusion.",
+      STR: "Notification should not delay hemodynamic stabilization.",
+      SAFE_DELAY: "Assessment alone delays lifesaving therapy."
+    }
+  }
+},
+{
+  q: "A ventilated patient suddenly develops high peak airway pressures and absent breath sounds on the right. What should the nurse do FIRST?",
+  options: [
+    { text: "Suspect pneumothorax and prepare for emergency intervention", tag: "SCFHS" },
+    { text: "Suction the endotracheal tube", tag: "NCLEX" },
+    { text: "Notify respiratory therapy", tag: "STR" },
+    { text: "Check ventilator alarms", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Sudden unilateral breath sound loss with high pressures suggests tension pneumothorax requiring immediate action.",
+    distractors: {
+      NCLEX: "Suctioning does not resolve lung collapse.",
+      STR: "Escalation should not delay recognition of a life-threatening emergency.",
+      SAFE_DELAY: "Alarm checks delay critical intervention."
+    }
+  }
+},
+{
+  q: "A patient with acute pancreatitis reports severe epigastric pain radiating to the back and develops hypotension. What is the nurse’s PRIORITY?",
+  options: [
+    { text: "Initiate aggressive IV fluid resuscitation", tag: "SCFHS" },
+    { text: "Administer opioid analgesia", tag: "NCLEX" },
+    { text: "Notify gastroenterology", tag: "STR" },
+    { text: "Insert nasogastric tube", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Fluid shifts and third spacing make volume resuscitation the priority to prevent shock.",
+    distractors: {
+      NCLEX: "Pain control is important but secondary to perfusion.",
+      STR: "Consultation should not delay stabilization.",
+      SAFE_DELAY: "NG decompression is not the immediate priority."
+    }
+  }
+},
+{
+  q: "A patient with head trauma shows decreasing level of consciousness and unequal pupils. What is the FIRST nursing action?",
+  options: [
+    { text: "Elevate head of bed and ensure airway protection", tag: "SCFHS" },
+    { text: "Notify neurosurgeon", tag: "STR" },
+    { text: "Prepare for CT scan", tag: "NCLEX" },
+    { text: "Document neurological changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway and intracranial pressure control are priorities in acute neurological deterioration.",
+    distractors: {
+      STR: "Notification should follow immediate stabilization.",
+      NCLEX: "Imaging is secondary to airway and perfusion.",
+      SAFE_DELAY: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A patient receiving magnesium sulfate for preeclampsia has a respiratory rate of 10/min and absent reflexes. What should the nurse do FIRST?",
+  options: [
+    { text: "Stop magnesium infusion and prepare calcium gluconate", tag: "SCFHS" },
+    { text: "Increase oxygen delivery", tag: "NCLEX" },
+    { text: "Notify obstetrician", tag: "STR" },
+    { text: "Monitor fetal heart rate", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs of magnesium toxicity require immediate cessation and antidote preparation.",
+    distractors: {
+      NCLEX: "Oxygen does not reverse toxicity.",
+      STR: "Notification must not delay antidote preparation.",
+      SAFE_DELAY: "Fetal monitoring is secondary to maternal stabilization."
+    }
+  }
+},
+{
+  q: "A patient with liver failure develops confusion and asterixis. Ammonia level is elevated. What is the PRIORITY nursing intervention?",
+  options: [
+    { text: "Administer lactulose as prescribed", tag: "SCFHS" },
+    { text: "Restrict dietary protein", tag: "NCLEX" },
+    { text: "Notify hepatology", tag: "STR" },
+    { text: "Document neurological status", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Lactulose reduces ammonia absorption and prevents worsening encephalopathy.",
+    distractors: {
+      NCLEX: "Dietary changes are not immediate treatment.",
+      STR: "Consultation should not delay therapy.",
+      SAFE_DELAY: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A trauma patient suddenly becomes restless with falling blood pressure and distended neck veins. What is the nurse’s FIRST action?",
+  options: [
+    { text: "Suspect cardiac tamponade and prepare for emergency response", tag: "SCFHS" },
+    { text: "Administer IV fluids rapidly", tag: "NCLEX" },
+    { text: "Notify trauma surgeon", tag: "STR" },
+    { text: "Reassess vital signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Beck’s triad suggests tamponade requiring immediate recognition and escalation.",
+    distractors: {
+      NCLEX: "Fluids alone do not relieve tamponade.",
+      STR: "Notification must not delay recognition.",
+      SAFE_DELAY: "Assessment alone delays lifesaving action."
+    }
+  }
 }
 ];
 
